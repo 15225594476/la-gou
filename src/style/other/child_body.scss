@@ -1,4 +1,4 @@
-.child_body{
+.c_body{
   //margin-top: rem(100);
   width: 95%;
   margin:rem(100) auto;
@@ -22,10 +22,36 @@
       }
     }
   };
-  .child_body{
-    h1{
-      font-size: rem(24);
-      margin-top: rem(28);
-    }
+};
+.child_body{
+  width: 95%;
+  margin: rem(-70) auto;
+  h1{
+    font-size: rem(28);
   }
+}
+//职位分类  按钮
+.acto{
+  background: #e0e0e0;
+  color: #00B38A;
+  width: rem(90);
+  height: rem(35);
+  -webkit-border-radius: rem(20);
+  -moz-border-radius: rem(20);
+  border-radius: rem(20);
+  border: none;
+  margin-left: rem(10);
+}
+.acto2{
+  background: #00B38A;
+  color: #fff;
+}
+//底部职位介绍
+.child_foo{
+  margin-left: rem(10);
+  margin-top: rem(15);
+    p{
+      font-size: rem(24);
+      margin-top: rem(10);
+    }
 }

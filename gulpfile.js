@@ -49,8 +49,12 @@ gulp.task('sass', function () {
 // js
 gulp.task('js', function () {
    gulp.src(app.srcPath + 'script/**/*.js')
+       .pipe($.babel({
+           presets: ['es2015']
+       }))
        .pipe($.concat('index.js'))
        .pipe(gulp.dest(app.devPath + 'script'))
+       .pipe($.ngAnnotate())
        .pipe($.uglify())
        .pipe(gulp.dest(app.prodPath + 'script'))
        .pipe($.connect.reload());
@@ -76,9 +80,10 @@ gulp.task('build', ['imgs', 'js', 'sass', 'lib', 'html', 'json']);
 
 gulp.task('server', ['build'], function () {
     $.connect.server({
+        host: 'localhost',
         root: [app.devPath],
         livereload: true,
-        port: 8228
+        port: 1234
     });
     // open('http://localhost:1234');
 

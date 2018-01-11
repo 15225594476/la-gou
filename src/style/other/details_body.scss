@@ -1,0 +1,19 @@
+.details_body{
+  //margin-top: rem(100);
+  width: 95%;
+  margin:rem(100) auto rem(-60);
+  border-bottom: 1.5px solid #e0e0e0;
+  height: rem(150);
+  p{
+    font-size: rem(22);
+    margin-top: rem(15);
+    span{
+      color: red;
+    }
+  }
+}
+.details_footer{
+  width: 95%;
+  margin:rem(-50)  auto;
+  font-size: rem(22);
+}

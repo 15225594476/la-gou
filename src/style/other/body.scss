@@ -1,7 +1,6 @@
 @charset "UTF-8";
 .body {
   width: 100%;
-  margin-top: rem(160);
   margin-bottom: rem(80);
   //头部定制职位，超链接跳转
   .body_head{
@@ -33,6 +32,7 @@
   }
 //  主ti部分,ul
   .body_body{
+    margin-top: rem(160);
     li{
       height: rem(160);
       border-bottom: rem(1) solid #e0e0e0;
@@ -85,6 +85,6 @@
     }
   }
 }
-.search_body{
-
+.colle_a{
+  margin-top: rem(-80);
 }

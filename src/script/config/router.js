@@ -40,11 +40,41 @@ angular.module('app').config(['$stateProvider', '$urlRouterProvider', function (
             url: '/colle',
             templateUrl: 'view/colle.html'
         })
-        //子集
-        .state('child', {
+        //职位详情
+        .state('details', {
             url: '/example/:id',
+            templateUrl: 'view/details.html'
+        })
+        //公司职位
+        .state('child', {
+            url: '/example/:id/:id2',
             templateUrl: 'view/Child.html'
         })
 
+
     $urlRouterProvider.otherwise('search');
+}]);
+angular.module('app').config(['$validationProvider', function ($validationProvider) {
+    var expression = {
+        required: function (val) {
+            return !!val;
+        },
+        phone:  /^1(3|4|5|7|8)\d{9}$/,
+        password: /^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{6,18}$/
+    };
+    var defaultMsg = {
+        required: {
+            success: '',
+            error: '不能为空'
+        },
+        phone: {
+            success: '',
+            error: '请输入正确的手机号码'
+        },
+        password: {
+            success: '',
+            error: '6-18位字母数字组合密码'
+        }
+    }
+    $validationProvider.setExpression(expression).setDefaultMsg(defaultMsg);
 }]);
