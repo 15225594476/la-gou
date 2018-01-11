@@ -1,0 +1,32 @@
+<div ng-controller="search">
+        <div sear-header></div>
+        <!--中间-->
+    <!--头部定制-->
+    <div class="search_body_header">
+        <ul>
+            <li>城市</li>
+            <li>薪资</li>
+            <li>公司规模</li>
+        </ul>
+    </div>
+        <div class="body">
+            <!--主体内容-->
+            <app-body my-date="arr2"></app-body>
+        </div>
+    <!--尾部-->
+    <dian-ji>
+        <div class="footer">
+            <a ui-sref="example" ng-class="{'active':false}">
+                职位
+            </a>
+
+            <a ui-sref="search"  ng-class="{'active':true}">
+                搜索
+            </a>
+
+            <a  ng-click="ac()" ng-class="{'active':false}">
+                我的
+            </a>
+        </div>
+    </dian-ji>
+</div>

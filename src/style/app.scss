@@ -1,0 +1,38 @@
+@charset "UTF-8";
+html, body {
+  height: 100%;
+}
+*{
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+a{
+  text-decoration: none;
+  color: #fff;
+}
+.view,.example {
+  height: 100%;
+}
+@function rem($num){
+  @return  $num/46.875+rem
+};
+//职位：头、身、尾
+@import "other/header";
+@import "other/body";
+@import "other/footer";
+//搜索 头部、身
+@import "other/search_header";
+@import "other/search_body_header";
+//我的 内容
+@import "other/myLoad_body";
+//登陆内容
+@import "other/load_body";
+//注册内容
+@import "other/register_body";
+//登陆成功内容
+@import "other/load_Succ";
+//大部分头部 < 内容
+@import "other/bo_header";
+//职位信息
+@import "other/child_body";

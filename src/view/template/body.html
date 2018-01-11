@@ -1,0 +1,21 @@
+ <!--主体内容-->
+    <ul class="body_body">
+        <li ng-repeat="item in myDate" ng-click="attr($index)">
+            <div class="Li_Div">
+                <div class="Div_Aa">
+                    <!--图片-->
+                    <div class="Aa_img">
+                        <img ng-src={{item.imageUrl}} alt="">
+                    </div>
+                    <!--文字内容-->
+                    <div class="Aa_ppp">
+                        <h1>{{item.companyName}}</h1>
+                        <p>{{item.job}} <span> [{{item.cityName}}]</span></p>
+                        <p>{{item.date}}</p>
+                    </div>
+                    <!--薪资 -->
+                    <span class="Aa_money">{{item.salaryName}}</span>
+                </div>
+            </div>
+        </li>
+    </ul>

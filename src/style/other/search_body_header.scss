@@ -1,0 +1,23 @@
+.search_body_header {
+  height: rem(90);
+  margin-top: rem(-2);
+  width: 100%;
+  border-bottom: 1px solid #e0e0e0;
+  @include top;
+  top:rem(80);
+  z-index: 1000;
+  background: #fff;
+    ul{
+      height: rem(80);
+      width: 100%;
+      display: flex;
+      background: #F7F7F7;
+      li{
+        width: 33.33%;
+        line-height: rem(80);
+        text-align: center;
+        font-size: rem(24);
+        color: #9E9E9E;
+      }
+    }
+}

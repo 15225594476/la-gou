@@ -1,0 +1,21 @@
+<div ng-controller="myLoad">
+    <div>
+        <a ui-sref="load" class="Go">去登陆</a>
+    </div>
+    <!--尾部-->
+    <dian-ji>
+        <div class="footer">
+            <a ui-sref="example" ng-class="{'active':false}">
+                职位
+            </a>
+
+            <a ui-sref="search" ng-class="{'active':false}">
+                搜索
+            </a>
+
+            <a ng-click="ac()" ng-class="{'active':true}">
+                我的
+            </a>
+        </div>
+    </dian-ji>
+</div>

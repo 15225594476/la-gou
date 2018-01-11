@@ -1,0 +1,23 @@
+.footer {
+  width: 100%;
+  height: rem(80);
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  line-height: rem(80);
+  background: pink;
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+  background: #00B38A;
+  color: #fff;
+  font-size: rem(22);
+  a{
+    display: block;
+    width: 33.33%;
+  }
+}
+.active{
+  background: #fff;
+  color: #000;
+}

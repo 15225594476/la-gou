@@ -1,0 +1,34 @@
+<div class="example" ng-controller="exampleCtrl">
+    <!--头部-->
+    <div app-header></div>
+
+    <!--中间部分-->
+    <div class="body">
+        <div class="body_head">
+            <p>
+                <span>10秒钟定制职位</span>
+                <a ui-sref="load">去登陆</a>
+            </p>
+        </div>
+        <app-body my-date="arr1"></app-body>
+    </div>
+
+    <!--尾部-->
+    <dian-ji>
+        <div class="footer">
+            <a ui-sref="example" ng-class="{'active':true}">
+                职位
+            </a>
+
+            <a ui-sref="search" ng-class="{'active':false}">
+                搜索
+            </a>
+
+            <a ng-click="ac()" ng-class="{'active':false}">
+                我的
+            </a>
+        </div>
+    </dian-ji>
+
+
+</div>

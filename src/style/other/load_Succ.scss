@@ -1,0 +1,60 @@
+@charset "UTF-8";
+input,button{
+  outline: none;
+}
+.load_succ {
+  width: 94%;
+  margin: 20% auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  //头像
+  .succ_img{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    div{
+      width: rem(130);
+      height: rem(130);
+      img{
+        width: 100%;
+        height: 100%;
+      }
+    }
+    span{
+      margin-top: rem(3);
+      font-size: rem(24);
+      font-weight: bold;
+    }
+  }
+//  投递、收藏
+  .succ_a{
+    height: rem(180);
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: rem(100);
+    a{
+      width: 40%;
+      height: 100%;
+      text-align: center;
+      line-height: rem(180);
+      font-size: rem(24);
+      background: #00B38A;
+    }
+  }
+//  退出登录
+    .succ_back{
+      width: 100%;
+      height: rem(100);
+      margin-top: rem(100);
+      a{
+        width: 100%;
+        line-height: rem(100);
+        font-size: rem(20);
+        text-align: center;
+        background: red;
+        display: block;
+      }
+    }
+}

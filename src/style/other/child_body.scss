@@ -1,0 +1,31 @@
+.child_body{
+  //margin-top: rem(100);
+  width: 95%;
+  margin:rem(100) auto;
+  .child_top{
+    display: flex;
+    align-items: center;
+    img{
+      width: rem(120);
+      height: rem(120);
+    }
+    div{
+      margin-left: rem(20);
+      p{
+          font-size: rem(22);
+          font-weight: bold;
+      }
+      p:nth-of-type(2){
+        margin-top: rem(8);
+        font-size: rem(22);
+        font-weight: initial;
+      }
+    }
+  };
+  .child_body{
+    h1{
+      font-size: rem(24);
+      margin-top: rem(28);
+    }
+  }
+}

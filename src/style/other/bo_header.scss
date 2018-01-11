@@ -1,0 +1,25 @@
+.bo_header{
+  width: 98%;
+  margin: 0 auto;
+  background: none;
+  display: flex;
+  justify-content: space-between;
+  div{
+    width: rem(50);
+    height: 100%;
+  }
+
+  .left{
+    font-size: rem(34);
+  }
+  .main{
+    font-size: rem(26);
+    width: rem(150);
+  }
+  .right{
+    font-size: rem(24);
+  }
+}
+.search_header{
+
+}

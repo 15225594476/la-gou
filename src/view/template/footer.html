@@ -1,0 +1,9 @@
+<div class="footer">
+    <a
+            ng-repeat="item in att"
+            ui-sref={{item.b}}
+            ng-click="switch($index)"
+            ng-class="{'active':item.c}">
+        {{item.a}}
+    </a>
+</div>
