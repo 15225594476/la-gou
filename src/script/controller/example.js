@@ -3,7 +3,7 @@ angular.module('app').controller('exampleCtrl', function ($state,$scope,$cookieS
         $rootScope.isNo=false;
         // $scope.namee="asdasdsad"
 
-        console.log()
+        console.log();
         if($rootScope.num){
             $scope.namee = $cookieStore.get('name').name1;
             $scope.Tiao = function(){

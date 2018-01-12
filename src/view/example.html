@@ -1,11 +1,15 @@
 <div class="example" ng-controller="exampleCtrl">
     <!--头部-->
-    <div app-header ></div>
+    <app-header
+            my-main2="10秒钟定制职位"
+            my-one="10秒钟定制职位"
+            my-there={{namee}}
+            on-there="Tiao()"
+            >
+    </app-header>
 
     <!--中间部分-->
-        <ex_header my-name={{namee}} on-send="Tiao()"></ex_header>
-
-        <app-body my-date="arr1"></app-body>
+        <app-body my-date="arr1" ></app-body>
 
 
     <!--尾部-->

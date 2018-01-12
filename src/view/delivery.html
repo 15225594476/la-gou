@@ -1,16 +1,21 @@
 <div ng-controller="delivery">
        <!--头 ！这是头-->
-       <bo-header my-rody="投递记录"></bo-header>
-       <!--头部定制-->
-       <there-header on-one="deli_a()"
-                      on-two="deli_b()"
-                      on-there="deli_c()"
-                      my-one="全部"
-                      my-there="不合适"
-                      my-two="面试邀请">
-       </there-header>
+       <app-header
+               my-left="<"
+               my-main2="投递记录"
+               my-right="主页"
+               on-left="left()"
+               on-main=""
+               on-right="right()"
+
+               on-one="deli_a()"
+               on-two="deli_b()"
+               on-there="deli_c()"
+               my-one="全部"
+               my-there="不合适"
+               my-two="面试邀请"
+       >
+       </app-header>
        <!--中间部分-->
-       <div class="body">
               <app-body my-date="arr3"></app-body>
-       </div>
 </div>

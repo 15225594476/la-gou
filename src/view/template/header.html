@@ -1,3 +1,23 @@
-<div class="header">
-    10秒定制职位
+<div class="search_header">
+    <div class="box">
+        <div class="a" ng-click="onLeft()">{{myLeft}}</div>
+        <input type="text" placeholder="搜索职位或公司" ng-if="myMain"/>
+        <div class="header" ng-click="onMain()">{{myMain2}}</div>
+        <div class="a" ng-click="onRight()">{{myRight}}</div>
+    </div>
+
+    <div class="search_body_header">
+        <ul>
+            <li ng-click="onOne()">{{myOne}}</li>
+            <li ng-click="onTwo()">{{myTwo}}</li>
+            <li ng-click="onThere()">{{myThere}}</li>
+        </ul>
+    </div>
+
+    <!--<div class="body_head">-->
+        <!--<p>-->
+            <!--<span >10秒钟定制职位</span>-->
+            <!--<a ng-click="onSend()">{{myName}}</a>-->
+        <!--</p>-->
+    <!--</div>-->
 </div>

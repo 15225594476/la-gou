@@ -1,8 +1,7 @@
 @charset "UTF-8";
 .body {
   width: 100%;
-  //margin-bottom: rem(80);
-  //头部定制职位，超链接跳转
+  padding-top: rem(160);
 
 //  主ti部分,ul
   .body_body{
@@ -60,10 +59,9 @@
   }
 }
 .colle_a{
-  padding-top: rem(80);
+
 }
 .body_head{
-  padding-top: rem(80);
   border-bottom: 1px solid #e0e0e0;
   width: 100%;
   background: #fff;

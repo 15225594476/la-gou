@@ -1,12 +1,18 @@
 <div ng-controller="search">
-        <div sear-header></div>
-        <!--中间-->
-    <!--头部定制-->
-    <there-header my-one="城市" my-there="公司规模" my-two="薪资"></there-header>
-        <div class="body">
+        <app-header
+                my-left="取消"
+                my-main="false"
+                my-right="搜索"
+                my-one="城市"
+                my-there="公司规模"
+                my-two="薪资"
+        >
+        </app-header>
+
+
             <!--主体内容-->
             <app-body my-date="arr2"></app-body>
-        </div>
+
     <!--尾部-->
     <dian-ji>
         <div class="footer">

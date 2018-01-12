@@ -1,7 +1,13 @@
 <div class="child_body">
     <h1>职位分类</h1>
     <div>
-        <button ng-repeat="item in att.positionClass" class="acto" ng-class="{acto2:$index==oo}" ng-click="cloo($index)">{{item.name}}</button>
+
+        <button
+                ng-repeat="item in att.positionClass"
+                class="acto"
+                ng-class="{acto2:$index==oo}"
+                ng-click="cloo($index)">{{item.name}}</button>
+
         <div ng-repeat="item in att.positionClass" ng-show="$index==oo">
             <div ng-repeat="itChild in item.positionList" class="child_foo">
                 <p>{{itChild.name}}</p>

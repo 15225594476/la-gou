@@ -1,8 +1,9 @@
 .search_header{
   background: #00B38A;
-  height: rem(80);
+  //height: rem(80);
   width: 100%;
   @include top;
+  z-index: 1000;
   .box{
     width: 95%;
     margin: 0 auto;

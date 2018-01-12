@@ -6,6 +6,7 @@ angular.module('app').controller('child', function ($scope,$http,$state) {
 
         $scope.att=res.data[$state.params.id];
         console.log($scope.att);
+
         $scope.cloo=function(index){
             $scope.oo = index;
         }

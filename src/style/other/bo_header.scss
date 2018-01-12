@@ -1,12 +1,13 @@
 .bo_header{
-  width: 98%;
-  margin: 0 auto;
-  background: none;
+
+  height: rem(80);
   display: flex;
   justify-content: space-between;
+  align-items: center;
+  background: #00B38A;
   div{
     width: rem(50);
-    height: 100%;
+    height: rem(50);
   }
 
   .left{
@@ -20,6 +21,7 @@
     font-size: rem(24);
   }
 }
-.search_header{
-
+//我的收藏
+.colle_body{
+  padding-top: 0;
 }
