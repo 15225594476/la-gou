@@ -1,17 +1,12 @@
 <div class="example" ng-controller="exampleCtrl">
     <!--头部-->
-    <div app-header></div>
+    <div app-header ></div>
 
     <!--中间部分-->
-    <div class="body">
-        <div class="body_head">
-            <p>
-                <span>10秒钟定制职位</span>
-                <a ui-sref="load">去登陆</a>
-            </p>
-        </div>
+        <ex_header my-name={{namee}} on-send="Tiao()"></ex_header>
+
         <app-body my-date="arr1"></app-body>
-    </div>
+
 
     <!--尾部-->
     <dian-ji>

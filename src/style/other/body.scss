@@ -1,38 +1,12 @@
 @charset "UTF-8";
 .body {
   width: 100%;
-  margin-bottom: rem(80);
+  //margin-bottom: rem(80);
   //头部定制职位，超链接跳转
-  .body_head{
-    margin-top: rem(1);
-    border-bottom: 1px solid #e0e0e0;
-    width: 100%;
-    background: #fff;
-    @include top;
-    top:rem(80);
-    z-index: 1000;
-    margin-top: rem(-2);
-    p{
-      height: rem(90);
-      line-height: rem(85);
-      width: 85%;
-      margin: 0 auto;
-      display: flex;
-      justify-content: space-between;
-      span{
-        color: #909090;
-        font-size: rem(22);
-      }
-      a{
-        color: #00B38A;
-        font-size: rem(25);
-        font-weight: bold;
-      }
-    }
-  }
+
 //  主ti部分,ul
   .body_body{
-    margin-top: rem(160);
+    //margin-top: rem(-80);
     li{
       height: rem(160);
       border-bottom: rem(1) solid #e0e0e0;
@@ -86,5 +60,29 @@
   }
 }
 .colle_a{
-  margin-top: rem(-80);
+  padding-top: rem(80);
+}
+.body_head{
+  padding-top: rem(80);
+  border-bottom: 1px solid #e0e0e0;
+  width: 100%;
+  background: #fff;
+  //z-index: 1000;
+  p{
+    height: rem(90);
+    line-height: rem(85);
+    width: 85%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    span{
+      color: #909090;
+      font-size: rem(22);
+    }
+    a{
+      color: #00B38A;
+      font-size: rem(25);
+      font-weight: bold;
+    }
+  }
 }

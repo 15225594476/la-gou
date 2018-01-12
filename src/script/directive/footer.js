@@ -3,7 +3,7 @@ angular.module('app').directive('appFooter', function () {
        restrict: 'EA',
        replace: true,
        templateUrl:"../view/template/footer.html",
-       controller:function($scope,$state){
+       controller:function($scope,$state,$rootScope){
 
        }
    }

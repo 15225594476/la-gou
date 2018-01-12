@@ -1,5 +1,5 @@
 'use strict';
-angular.module('app').controller('myLoad', function ($scope) {
+angular.module('app').controller('myLoad', function ($scope,$rootScope) {
 
     $scope.att = [
         {
@@ -18,4 +18,5 @@ angular.module('app').controller('myLoad', function ($scope) {
             c:false
         }
     ];
+
 });

@@ -1,5 +1,5 @@
 'use strict';
-angular.module('app').controller('Load', function ($scope,$http,$state) {
+angular.module('app').controller('Load', function ($scope,$http,$state,$cookieStore) {
     $scope.name="Load";
     $scope.Tex = "";
     $scope.Pas = "";
@@ -20,8 +20,9 @@ angular.module('app').controller('Load', function ($scope,$http,$state) {
     $scope.submit=function(){
         $http.get("https://www.easy-mock.com/mock/5a52256ad408383e0e3868d7/lagou/login")
             .then(function(res){
-                console.log(res);
-                $state.go("myLoade");
+                console.log()
+                $cookieStore.put("name",{name1:res.data.name,pas:2})
+                $state.go("loadsucc");
             })
     };
 });

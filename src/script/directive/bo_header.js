@@ -1,3 +1,4 @@
+//<  绑定策略  主页
 angular.module('app').directive('boHeader', function () {
    return {
        restrict: 'EA',

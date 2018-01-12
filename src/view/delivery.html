@@ -1,14 +1,14 @@
 <div ng-controller="delivery">
        <!--头 ！这是头-->
-       <bo-header my-rody="绑定策略"></bo-header>
+       <bo-header my-rody="投递记录"></bo-header>
        <!--头部定制-->
-       <div class="search_body_header">
-              <ul>
-                     <li ng-click="deli_a()">全部</li>
-                     <li ng-click="deli_b()">面试邀请</li>
-                     <li ng-click="deli_c()">不合适</li>
-              </ul>
-       </div>
+       <there-header on-one="deli_a()"
+                      on-two="deli_b()"
+                      on-there="deli_c()"
+                      my-one="全部"
+                      my-there="不合适"
+                      my-two="面试邀请">
+       </there-header>
        <!--中间部分-->
        <div class="body">
               <app-body my-date="arr3"></app-body>
